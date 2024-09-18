@@ -1,0 +1,104 @@
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #3c56d5, #0f53f4);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: gradientShift 10s ease infinite;
+  overflow: hidden;
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Input Styling */
+input {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  margin: 10px 0;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Flexbox Container for Layouts */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Headers */
+h1, h2, h3 {
+  
+  text-align: center;
+}
+
+/* Custom Scrollbar for Consistency */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+  border-radius: 10px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

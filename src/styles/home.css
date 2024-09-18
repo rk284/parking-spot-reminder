@@ -1,0 +1,151 @@
+/* Use an ID or class specific to the Home page to avoid conflicts */
+#home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4ecef8, #4177f4); /* More unique gradient */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for the navigation bar */
+#home-page nav {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(45, 138, 252, 0.8); /* Translucent pink */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styles */
+#home-page nav .nav-item {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#home-page nav .nav-item:hover {
+  transform: scale(1.1);
+}
+
+/* Main content area */
+#home-page .main-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+/* Map container */
+#home-page .map-container {
+  
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#home-page .save-button {
+  background-color: #007bff;
+  margin: 20px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#home-page .save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Popup styling for additional notes */
+#home-page .popup {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+#home-page .popup input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#home-page .popup button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#home-page .popup button:hover {
+  background-color: #218838;
+}
+
+/* Animation for sliding in the content */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #home-page .main-content {
+    padding: 10px;
+  }
+
+  #home-page .map-container {
+    height: 300px;
+  }
+
+  #home-page nav .nav-item {
+    font-size: 1.2rem;
+  }
+}
+
+.refresh-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.refresh-button:hover {
+  background-color: #218838;
+}

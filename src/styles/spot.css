@@ -1,0 +1,124 @@
+/* savedSpots.css */
+#spot-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4ecef8, #4177f4);/* More unique gradient */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for the navigation bar */
+#spot-page nav {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(45, 138, 252, 0.8); /* Translucent pink */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styles */
+#spot-page nav .nav-item {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#spot-page nav .nav-item:hover {
+  transform: scale(1.1);
+}
+
+#spot-page .saved-spots-page {
+  padding: 20px;
+}
+
+
+
+#spot-page .saved-spots-content {
+  margin-top: 20px;
+}
+
+#spot-page .spot-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  height: 70%;
+}
+#spot-page .spot-h1{
+  color: white;
+ }
+ #spot-page .spot-p{
+  color: white;
+ }
+
+#spot-page .spot-item {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#spot-page .spot-item button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#spot-page .spot-item button:hover {
+  background-color: #218838;
+}
+
+ .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+ #spot-page .modal-h2{
+  color: black;
+ }
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+  height: 200px;
+  text-align: center;
+}
+
+ .modal-buttons button {
+  padding: 8px 15px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ .modal-buttons button:hover {
+  background-color: #0056b3;
+}
